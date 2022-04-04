@@ -11,12 +11,18 @@ class Team:
     def team_players(self):
         return len(self.players)
 
-    def has_player(self, name):
-        answer = False
+    def has_player(self, player_there):
         for player in self.players:
-            if player == name:
-                answer = True
-        return answer 
+            if player == player_there:
+                return True
+        return False
+
+        # answer = False
+        # for player in self.players:
+        #     if player == player:
+        #         answer = True
+        # return answer 
+        
         # return self.players.count(player) > 0
 
     def play_game(self, game_won):
